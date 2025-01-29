@@ -1,0 +1,45 @@
+{
+    "schemaNamespace" : "GeneratedBlueAPI",
+    "input" : {
+        "operationSearchPaths" : [
+            "**/*.graphql"
+        ],
+        "schemaSearchPaths" : [
+            "./graphql_schema.json"
+        ]
+    },
+    "output" : {
+        "testMocks" : {
+            "none" : {
+            }
+        },
+        "schemaTypes" : {
+            "path" : "../GeneratedBlueAPI",
+            "moduleType" : {
+                "swiftPackageManager" : {
+                }
+            }
+        },
+        "operations" : {
+            "inSchemaModule" : {
+            }
+        }
+    },
+    "schemaDownloadConfiguration": {
+        "downloadMethod": {
+            "introspection": {
+                "endpointURL": "https://blue-api.morpho.org/graphql",
+                "httpMethod": {
+                    "POST": {}
+                },
+                "includeDeprecatedInputValues": false,
+                "outputFormat": "JSON"
+            }
+        },
+        "downloadTimeout": 60,
+        "headers": {
+            "Allow-Introspection": "true"
+        },
+        "outputPath": "./graphql_schema.json"
+    }
+}
