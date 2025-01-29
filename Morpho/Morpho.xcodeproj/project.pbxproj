@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D7341C22D3C4D0C00662697 /* BlueAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 5D7341C12D3C4D0C00662697 /* BlueAPI */; };
+		5D7341C42D3C4D0F00662697 /* BlueSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5D7341C32D3C4D0F00662697 /* BlueSDK */; };
+		5D7341C62D3C4D1500662697 /* BlueUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5D7341C52D3C4D1500662697 /* BlueUI */; };
+		5D7341FE2D3C4FD200662697 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5C19F52D33DC3500E54A1B /* WidgetKit.framework */; };
+		5D7341FF2D3C4FD200662697 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7341C72D3C4D6900662697 /* SwiftUI.framework */; };
+		5D7342102D3C4FD400662697 /* MetricGrowthExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5D7341FD2D3C4FD200662697 /* MetricGrowthExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5D7342162D3C500200662697 /* BlueAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 5D7342152D3C500200662697 /* BlueAPI */; };
+		5D7342182D3C500200662697 /* BlueSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5D7342172D3C500200662697 /* BlueSDK */; };
+		5D73421A2D3C500200662697 /* BlueUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5D7342192D3C500200662697 /* BlueUI */; };
+		5DC4D49E2D3D436500AA9095 /* MorphoCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC4D49D2D3D436500AA9095 /* MorphoCore */; };
+		5DC4D4A02D3D436B00AA9095 /* MorphoCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC4D49F2D3D436B00AA9095 /* MorphoCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D5C19D32D33DC2200E54A1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D5C19B92D33DC2100E54A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D5C19C02D33DC2100E54A1B;
+			remoteInfo = Morpho;
+		};
+		5D5C19DD2D33DC2200E54A1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D5C19B92D33DC2100E54A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D5C19C02D33DC2100E54A1B;
+			remoteInfo = Morpho;
+		};
+		5D73420E2D3C4FD400662697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D5C19B92D33DC2100E54A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D7341FC2D3C4FD200662697;
+			remoteInfo = MetricGrowthExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D0FD67A2D3B6BCF00522F1B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5D7342102D3C4FD400662697 /* MetricGrowthExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5D0FD6992D3B81C500522F1B /* BlueSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BlueSDK; path = ../BlueSDK; sourceTree = SOURCE_ROOT; };
+		5D0FD69A2D3B822A00522F1B /* BlueUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BlueUI; path = ../BlueUI; sourceTree = SOURCE_ROOT; };
+		5D0FD6A32D3B9EBC00522F1B /* BlueAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BlueAPI; path = ../BlueAPI; sourceTree = SOURCE_ROOT; };
+		5D5C19C12D33DC2100E54A1B /* Morpho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morpho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5C19D22D33DC2200E54A1B /* MorphoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorphoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5C19DC2D33DC2200E54A1B /* MorphoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorphoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5C19F52D33DC3500E54A1B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5D5C19F72D33DC3500E54A1B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5D7341C72D3C4D6900662697 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		5D7341FD2D3C4FD200662697 /* MetricGrowthExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MetricGrowthExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC4D49C2D3D3AD400AA9095 /* MorphoCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MorphoCore; path = ../MorphoCore; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5D5C1A422D3405ED00E54A1B /* Exceptions for "Morpho" folder in "Morpho" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5D5C19C02D33DC2100E54A1B /* Morpho */;
+		};
+		5D7342142D3C4FD400662697 /* Exceptions for "MetricGrowth" folder in "MetricGrowthExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5D7341FC2D3C4FD200662697 /* MetricGrowthExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5D5C19C32D33DC2100E54A1B /* Morpho */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5D5C1A422D3405ED00E54A1B /* Exceptions for "Morpho" folder in "Morpho" target */,
+			);
+			path = Morpho;
+			sourceTree = "<group>";
+		};
+		5D5C19D52D33DC2200E54A1B /* MorphoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MorphoTests;
+			sourceTree = "<group>";
+		};
+		5D5C19DF2D33DC2200E54A1B /* MorphoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MorphoUITests;
+			sourceTree = "<group>";
+		};
+		5D7342002D3C4FD200662697 /* MetricGrowth */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5D7342142D3C4FD400662697 /* Exceptions for "MetricGrowth" folder in "MetricGrowthExtension" target */,
+			);
+			path = MetricGrowth;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D5C19BE2D33DC2100E54A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC4D49E2D3D436500AA9095 /* MorphoCore in Frameworks */,
+				5D7341C22D3C4D0C00662697 /* BlueAPI in Frameworks */,
+				5D7341C62D3C4D1500662697 /* BlueUI in Frameworks */,
+				5D7341C42D3C4D0F00662697 /* BlueSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5C19CF2D33DC2200E54A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5C19D92D33DC2200E54A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D7341FA2D3C4FD200662697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D73421A2D3C500200662697 /* BlueUI in Frameworks */,
+				5D7342162D3C500200662697 /* BlueAPI in Frameworks */,
+				5DC4D4A02D3D436B00AA9095 /* MorphoCore in Frameworks */,
+				5D7342182D3C500200662697 /* BlueSDK in Frameworks */,
+				5D7341FF2D3C4FD200662697 /* SwiftUI.framework in Frameworks */,
+				5D7341FE2D3C4FD200662697 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D5C19B82D33DC2100E54A1B = {
+			isa = PBXGroup;
+			children = (
+				5DC4D49C2D3D3AD400AA9095 /* MorphoCore */,
+				5D0FD6A32D3B9EBC00522F1B /* BlueAPI */,
+				5D0FD69A2D3B822A00522F1B /* BlueUI */,
+				5D0FD6992D3B81C500522F1B /* BlueSDK */,
+				5D5C19C32D33DC2100E54A1B /* Morpho */,
+				5D5C19D52D33DC2200E54A1B /* MorphoTests */,
+				5D5C19DF2D33DC2200E54A1B /* MorphoUITests */,
+				5D7342002D3C4FD200662697 /* MetricGrowth */,
+				5D5C19F42D33DC3500E54A1B /* Frameworks */,
+				5D5C19C22D33DC2100E54A1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D5C19C22D33DC2100E54A1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D5C19C12D33DC2100E54A1B /* Morpho.app */,
+				5D5C19D22D33DC2200E54A1B /* MorphoTests.xctest */,
+				5D5C19DC2D33DC2200E54A1B /* MorphoUITests.xctest */,
+				5D7341FD2D3C4FD200662697 /* MetricGrowthExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D5C19F42D33DC3500E54A1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D7341C72D3C4D6900662697 /* SwiftUI.framework */,
+				5D5C19F52D33DC3500E54A1B /* WidgetKit.framework */,
+				5D5C19F72D33DC3500E54A1B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D5C19C02D33DC2100E54A1B /* Morpho */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D5C19E62D33DC2200E54A1B /* Build configuration list for PBXNativeTarget "Morpho" */;
+			buildPhases = (
+				5D5C19BD2D33DC2100E54A1B /* Sources */,
+				5D5C19BE2D33DC2100E54A1B /* Frameworks */,
+				5D5C19BF2D33DC2100E54A1B /* Resources */,
+				5D0FD67A2D3B6BCF00522F1B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D73420F2D3C4FD400662697 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5D5C19C32D33DC2100E54A1B /* Morpho */,
+			);
+			name = Morpho;
+			packageProductDependencies = (
+				5D7341C12D3C4D0C00662697 /* BlueAPI */,
+				5D7341C32D3C4D0F00662697 /* BlueSDK */,
+				5D7341C52D3C4D1500662697 /* BlueUI */,
+				5DC4D49D2D3D436500AA9095 /* MorphoCore */,
+			);
+			productName = Morpho;
+			productReference = 5D5C19C12D33DC2100E54A1B /* Morpho.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D5C19D12D33DC2200E54A1B /* MorphoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D5C19E92D33DC2200E54A1B /* Build configuration list for PBXNativeTarget "MorphoTests" */;
+			buildPhases = (
+				5D5C19CE2D33DC2200E54A1B /* Sources */,
+				5D5C19CF2D33DC2200E54A1B /* Frameworks */,
+				5D5C19D02D33DC2200E54A1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D5C19D42D33DC2200E54A1B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5D5C19D52D33DC2200E54A1B /* MorphoTests */,
+			);
+			name = MorphoTests;
+			packageProductDependencies = (
+			);
+			productName = MorphoTests;
+			productReference = 5D5C19D22D33DC2200E54A1B /* MorphoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5D5C19DB2D33DC2200E54A1B /* MorphoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D5C19EC2D33DC2200E54A1B /* Build configuration list for PBXNativeTarget "MorphoUITests" */;
+			buildPhases = (
+				5D5C19D82D33DC2200E54A1B /* Sources */,
+				5D5C19D92D33DC2200E54A1B /* Frameworks */,
+				5D5C19DA2D33DC2200E54A1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D5C19DE2D33DC2200E54A1B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5D5C19DF2D33DC2200E54A1B /* MorphoUITests */,
+			);
+			name = MorphoUITests;
+			packageProductDependencies = (
+			);
+			productName = MorphoUITests;
+			productReference = 5D5C19DC2D33DC2200E54A1B /* MorphoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5D7341FC2D3C4FD200662697 /* MetricGrowthExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D7342112D3C4FD400662697 /* Build configuration list for PBXNativeTarget "MetricGrowthExtension" */;
+			buildPhases = (
+				5D7341F92D3C4FD200662697 /* Sources */,
+				5D7341FA2D3C4FD200662697 /* Frameworks */,
+				5D7341FB2D3C4FD200662697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5D7342002D3C4FD200662697 /* MetricGrowth */,
+			);
+			name = MetricGrowthExtension;
+			packageProductDependencies = (
+				5D7342152D3C500200662697 /* BlueAPI */,
+				5D7342172D3C500200662697 /* BlueSDK */,
+				5D7342192D3C500200662697 /* BlueUI */,
+				5DC4D49F2D3D436B00AA9095 /* MorphoCore */,
+			);
+			productName = MetricGrowthExtension;
+			productReference = 5D7341FD2D3C4FD200662697 /* MetricGrowthExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D5C19B92D33DC2100E54A1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					5D5C19C02D33DC2100E54A1B = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					5D5C19D12D33DC2200E54A1B = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 5D5C19C02D33DC2100E54A1B;
+					};
+					5D5C19DB2D33DC2200E54A1B = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 5D5C19C02D33DC2100E54A1B;
+					};
+					5D7341FC2D3C4FD200662697 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 5D5C19BC2D33DC2100E54A1B /* Build configuration list for PBXProject "Morpho" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D5C19B82D33DC2100E54A1B;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5D0FD6A62D3C340800522F1B /* XCRemoteSwiftPackageReference "Swift-BigInt" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5D5C19C22D33DC2100E54A1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D5C19C02D33DC2100E54A1B /* Morpho */,
+				5D5C19D12D33DC2200E54A1B /* MorphoTests */,
+				5D5C19DB2D33DC2200E54A1B /* MorphoUITests */,
+				5D7341FC2D3C4FD200662697 /* MetricGrowthExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D5C19BF2D33DC2100E54A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5C19D02D33DC2200E54A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5C19DA2D33DC2200E54A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D7341FB2D3C4FD200662697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D5C19BD2D33DC2100E54A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5C19CE2D33DC2200E54A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5C19D82D33DC2200E54A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D7341F92D3C4FD200662697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D5C19D42D33DC2200E54A1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D5C19C02D33DC2100E54A1B /* Morpho */;
+			targetProxy = 5D5C19D32D33DC2200E54A1B /* PBXContainerItemProxy */;
+		};
+		5D5C19DE2D33DC2200E54A1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D5C19C02D33DC2100E54A1B /* Morpho */;
+			targetProxy = 5D5C19DD2D33DC2200E54A1B /* PBXContainerItemProxy */;
+		};
+		5D73420F2D3C4FD400662697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D7341FC2D3C4FD200662697 /* MetricGrowthExtension */;
+			targetProxy = 5D73420E2D3C4FD400662697 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5D5C19E42D33DC2200E54A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D5C19E52D33DC2200E54A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5D5C19E72D33DC2200E54A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Morpho/Morpho.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Morpho/Assets.xcassets Morpho/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VDD6U3CAP8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Morpho/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Morpho Analytics";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oscarmac.Morpho-Analytics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.oscarmac.Morpho-Analytics";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5D5C19E82D33DC2200E54A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Morpho/Morpho.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Morpho/Assets.xcassets Morpho/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VDD6U3CAP8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Morpho/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Morpho Analytics";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oscarmac.Morpho-Analytics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.oscarmac.Morpho-Analytics";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5D5C19EA2D33DC2200E54A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDD6U3CAP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmacieira.MorphoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morpho.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Morpho";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5D5C19EB2D33DC2200E54A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDD6U3CAP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmacieira.MorphoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morpho.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Morpho";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5D5C19ED2D33DC2200E54A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDD6U3CAP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmacieira.MorphoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Morpho;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5D5C19EE2D33DC2200E54A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDD6U3CAP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmacieira.MorphoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Morpho;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5D7342122D3C4FD400662697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VDD6U3CAP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetricGrowth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MetricGrowth;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oscarmac.Morpho-Analytics.MetricGrowth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.oscarmac.Morpho-Analytics.MetricGrowth";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D7342132D3C4FD400662697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VDD6U3CAP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetricGrowth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MetricGrowth;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oscarmac.Morpho-Analytics.MetricGrowth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.oscarmac.Morpho-Analytics.MetricGrowth";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D5C19BC2D33DC2100E54A1B /* Build configuration list for PBXProject "Morpho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D5C19E42D33DC2200E54A1B /* Debug */,
+				5D5C19E52D33DC2200E54A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D5C19E62D33DC2200E54A1B /* Build configuration list for PBXNativeTarget "Morpho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D5C19E72D33DC2200E54A1B /* Debug */,
+				5D5C19E82D33DC2200E54A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D5C19E92D33DC2200E54A1B /* Build configuration list for PBXNativeTarget "MorphoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D5C19EA2D33DC2200E54A1B /* Debug */,
+				5D5C19EB2D33DC2200E54A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D5C19EC2D33DC2200E54A1B /* Build configuration list for PBXNativeTarget "MorphoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D5C19ED2D33DC2200E54A1B /* Debug */,
+				5D5C19EE2D33DC2200E54A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D7342112D3C4FD400662697 /* Build configuration list for PBXNativeTarget "MetricGrowthExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7342122D3C4FD400662697 /* Debug */,
+				5D7342132D3C4FD400662697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D0FD6A62D3C340800522F1B /* XCRemoteSwiftPackageReference "Swift-BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mkrd/Swift-BigInt.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D7341C12D3C4D0C00662697 /* BlueAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BlueAPI;
+		};
+		5D7341C32D3C4D0F00662697 /* BlueSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BlueSDK;
+		};
+		5D7341C52D3C4D1500662697 /* BlueUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BlueUI;
+		};
+		5D7342152D3C500200662697 /* BlueAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BlueAPI;
+		};
+		5D7342172D3C500200662697 /* BlueSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BlueSDK;
+		};
+		5D7342192D3C500200662697 /* BlueUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BlueUI;
+		};
+		5DC4D49D2D3D436500AA9095 /* MorphoCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MorphoCore;
+		};
+		5DC4D49F2D3D436B00AA9095 /* MorphoCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MorphoCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5D5C19B92D33DC2100E54A1B /* Project object */;
+}
